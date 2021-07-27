@@ -23,7 +23,7 @@
             Conteúdos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="http://localhost/powerofstar/access/animes.php" alt='Broken Link'>Animes</a></li>
+            <li><a class="dropdown-item" href="https://otakustation.github.io/home/animes.html/" alt='Broken Link'>Animes</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Mangás</a></li>
           </ul>
@@ -50,7 +50,7 @@
 </nav>
 
       <?php
-        $webuser = str_replace("https://otakustation.github.io/animes/watch/player/", "", $_SERVER["REQUEST_URI"]);
+        $webuser = str_replace("https://otakustation.github.io/animes/watch/player.html/", "", $_SERVER["REQUEST_URI"]);
           if(substr($webuser, 1, strlen($webuser))=="logout.php"){
           }else{
             $name = substr($webuser, 1, strlen($webuser));
